@@ -1,0 +1,2 @@
+mario是基于servlet实现的mvc，用一个全局的filter来做核心的控制器，使用sql2o框架作为数据库基础操作访问。使用一个bootstrap作为
+初始化启动，实现它并遵循filter参数约定参数即可。
