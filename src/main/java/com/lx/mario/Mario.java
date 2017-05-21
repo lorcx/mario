@@ -1,6 +1,7 @@
 package com.lx.mario;
 
 import com.lx.mario.config.ConfigLoader;
+import com.lx.mario.render.Render;
 import com.lx.mario.route.RouteManager;
 import com.lx.mario.wrapper.Request;
 import com.lx.mario.wrapper.Response;
@@ -17,6 +18,8 @@ public class Mario {
     private ConfigLoader configLoader;
     // 框架是否初始化
     private boolean init = false;
+    // 渲染器
+    private Render render;
 
     private Mario() {
         routes = new RouteManager();
@@ -73,5 +76,13 @@ public class Mario {
 
     public void setInit(boolean init) {
         this.init = init;
+    }
+
+    public Render getRender(){
+        return render;
+    }
+
+    public void setRender(Render render) {
+        this.render = render;
     }
 }

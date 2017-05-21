@@ -32,6 +32,7 @@ public class RouteManager {
         r.setController(controller);
         r.setPath(path);
         routes.add(r);
+        LOGGER.info("Add Route : [" + path + "]");
     }
 
     public List<Route> getRoutes() {
